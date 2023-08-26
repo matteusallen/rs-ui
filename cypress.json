@@ -1,0 +1,7 @@
+{
+  "viewportWidth": 1280,
+  "viewportHeight": 1024,
+  "env": {
+    "environment": "development"
+  }
+}

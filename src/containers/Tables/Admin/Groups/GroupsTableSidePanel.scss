@@ -1,0 +1,176 @@
+@import '../../../../styles/Colors/colors';
+
+.group-side-panel {
+  background: $white;
+  height: calc(100% - 188px);
+  overflow: overlay;
+  overflow-y: auto;
+  width: 350px;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  flex-flow: column nowrap;
+  top: 188px;
+  box-shadow: -2px 2px 5px 0 rgba(17, 24, 31, 0.3), -2px 2px 10px 0 rgba(17, 24, 31, 0.1);
+  font-family: IBMPlexSans-Regular;
+  text-align: left;
+  padding: 20px;
+
+  .close-icon {
+    img {
+      height: 14px;
+    }
+  }
+
+  .deferred-state {
+    color: $primary-text;
+    font-family: 'IBMPlexSans-Regular';
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    line-height: 77%;
+  }
+
+  .code-container {
+    position: relative;
+    margin-top: 25px;
+
+    p {
+      color: $link-text;
+      font-size: 16px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .info-tooltip {
+      background: $link-text;
+      color: $white;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+
+    .copy-tooltip {
+      opacity: 0;
+      position: absolute;
+      top: -55px;
+      background: $link-text;
+      padding: 10px;
+      left: 25px;
+      color: $white;
+      transition: opacity 0.3s;
+
+      &.open {
+        opacity: 1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -13px;
+        left: 60px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 22px solid $link-text;
+      }
+    }
+
+    & button {
+      margin-top: 10px;
+      width: 160px;
+
+      &:disabled {
+        opacity: 0.3;
+        border: none !important;
+      }
+    }
+  }
+
+  .group-side-divider {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+
+    .contact-name {
+      font-size: 18px;
+      font-family: 'IBMPlexSans-SemiBold';
+      line-height: 23px;
+      margin: 20px 10px 15px 0;
+    }
+
+    .line {
+      background: $primary-border;
+      margin-bottom: 15px;
+      height: 1px;
+      flex: 1;
+      position: relative;
+      top: 11px;
+    }
+  }
+
+  .contact-information {
+    margin-bottom: 20px;
+
+    h4 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .mailing-address {
+    margin-bottom: 20px;
+    p {
+      margin: 0;
+    }
+  }
+
+  .delete-group-button {
+    padding: 0;
+    font-size: 12px;
+    color: $error-red;
+  }
+  .close-icon:hover {
+    cursor: pointer;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .export-edit-buttons-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .group-export-bill {
+      background-color: $secondary-button;
+      color: $white;
+
+      &:disabled {
+        background-color: $primary-border;
+        color: $side-nav-color;
+      }
+    }
+
+    .group-edit {
+      margin-top: 5px;
+      background-color: $white;
+      color: $link-text;
+      align-self: center;
+      width: 115px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../styles/Colors/colors';
+
+.renter-questions-card {
+  .heading-container {
+    margin-bottom: 20px;
+  }
+  .MuiTextField-root {
+    width: 84%;
+  }
+  .MuiFormControlLabel-label {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .open-text-answer {
+    margin-top: 10px !important;
+    width: 100%;
+  }
+  .required-text {
+    font-weight: 700;
+    color: $secondary-text;
+    letter-spacing: 0.7px;
+  }
+  p {
+    margin: 10px 0;
+    font-size: 16px;
+
+    &.open-text {
+      margin-bottom: 0;
+    }
+  }
+}

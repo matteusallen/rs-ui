@@ -1,0 +1,87 @@
+@import '../../../../styles/Colors/colors';
+
+.create-group-modal {
+  .group-leader-select {
+    margin-top: 20px;
+    background-color: $primary-background;
+    height: 55px;
+    padding-top: 13px;
+
+    &.filled {
+      background-color: $filled-background;
+    }
+
+    #select-label-STATE {
+      top: -12px;
+    }
+
+    #select-label-GROUP-LEADER {
+      top: -12px;
+    }
+
+    #mui-component-select-STATE {
+      margin-bottom: 15px;
+    }
+  }
+  .MuiGrid-container {
+    margin-top: -25px;
+    margin-bottom: -25px;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+  .section-header {
+    font-family: 'IBMPlexSans-SemiBold';
+    font-size: 1.125rem;
+    letter-spacing: 0.8px;
+    margin: 20px 0;
+
+    @media screen and (max-width: 601px) {
+      margin: 20px 0;
+    }
+  }
+
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 20px;
+
+    p {
+      margin: 2px;
+      margin-left: 10px;
+    }
+
+    p:first-child {
+      font-size: 16px;
+    }
+
+    p:last-child {
+      color: #adadad;
+    }
+  }
+
+  .flex-button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 42px 0 0;
+
+    @media screen and (max-width: 601px) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 20px 0 0;
+    }
+
+    .form-button {
+      line-height: 0;
+      width: 100px !important;
+      margin-left: 20px;
+    }
+  }
+}

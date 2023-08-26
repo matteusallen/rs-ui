@@ -1,0 +1,518 @@
+{
+  "hasStalls": true,
+  "hasRvs": true,
+  "step": "details",
+  "eventDates": {
+    "startDate": "2020-11-15",
+    "endDate": "2020-11-30"
+  },
+  "bookingWindow": {
+    "startDate": "2020-11-15",
+    "endDate": "2020-11-30"
+  },
+  "checkInTime": "15:00",
+  "checkOutTime": "12:00",
+  "eventDescription": "Rodeo's \"classic\" event, saddle bronco riding, has roots that run deep in the history of the Old West. Ranch hands would often gather and compete among themselves to see who could display the best style while riding unbroken horses. It was from this early competition that today's event was born. Each rider must begin his ride with his feet over the bronc's shoulders to give the horse the advantage. A rider who synchronizes his spurring action with the animal's bucking efforts will receive a high score. Other factors considered in the scoring are the cowboy's control throughout the ride, the length of this spurring stroke and how hard the horse bucks. Model spurring action begins with the rider's feet far forward on the bronc's point of shoulder, sweeping to the back of the saddle, or \"cantle,\" as the horse bucks. The rider then snaps his feet back to the horse's neck before its front feet hit the ground. Disqualification results if, prior to the buzzer, which sounds after eight seconds, the rider touches the animal, himself or his equipment with his free hand, if either foot slips out of a stirrup, if he drops the bronc rein, or if he fails to have his feet in the proper \"mark out\" position at the beginning of the ride",
+  "stalls": [
+    {
+      "dateRange": {
+        "startDate": "2020-11-15",
+        "endDate": "2020-11-30"
+      },
+      "entireEvent": false,
+      "name": "Amazing Rate",
+      "price": "50",
+      "pricing": "nightly",
+      "stallsForThisRate": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "dateRange": {
+        "startDate": "2020-11-25",
+        "endDate": "2020-11-30"
+      },
+      "entireEvent": false,
+      "name": "Elite",
+      "price": "1000",
+      "pricing": "flat",
+      "stallsForThisRate": [
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80"
+      ]
+    }
+  ],
+  "eventName": "Rodeo One",
+  "addOns": [
+    {
+      "id": "1",
+      "price": "5",
+      "name": "shavings",
+      "unitName": "bag"
+    },
+    {
+      "id": "2",
+      "price": "10",
+      "name": "mats",
+      "unitName": "mat"
+    }
+  ],
+  "rvs": [
+    {
+      "price": "25",
+      "rvLotId": "1",
+      "spots": [
+        {
+          "id": "1",
+          "name": "RV1",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "2",
+          "name": "RV2",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "3",
+          "name": "RV3",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "4",
+          "name": "RV4",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "5",
+          "name": "RV5",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "6",
+          "name": "RV6",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "7",
+          "name": "RV7",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "8",
+          "name": "RV8",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "9",
+          "name": "RV9",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "10",
+          "name": "RV10",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "11",
+          "name": "RV11",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "12",
+          "name": "RV12",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "13",
+          "name": "RV13",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "14",
+          "name": "RV14",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "15",
+          "name": "RV15",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "16",
+          "name": "RV16",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "17",
+          "name": "RV17",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "18",
+          "name": "RV18",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "19",
+          "name": "RV19",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "20",
+          "name": "RV20",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "21",
+          "name": "RV21",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "22",
+          "name": "RV22",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "23",
+          "name": "RV23",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "24",
+          "name": "RV24",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "25",
+          "name": "RV25",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "26",
+          "name": "RV26",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "27",
+          "name": "RV27",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "28",
+          "name": "RV28",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "29",
+          "name": "RV29",
+          "description": null,
+          "__typename": "RVSpot"
+        },
+        {
+          "id": "30",
+          "name": "RV30",
+          "description": null,
+          "__typename": "RVSpot"
+        }
+      ],
+      "rvLot": {
+        "id": "1",
+        "name": "Rv Lot #1",
+        "description": "Lot down by the river",
+        "sewer": true,
+        "water": true,
+        "power": 50,
+        "availableRVSpots": [
+          {
+            "id": "1",
+            "name": "RV1",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "2",
+            "name": "RV2",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "3",
+            "name": "RV3",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "4",
+            "name": "RV4",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "5",
+            "name": "RV5",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "6",
+            "name": "RV6",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "7",
+            "name": "RV7",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "8",
+            "name": "RV8",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "9",
+            "name": "RV9",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "10",
+            "name": "RV10",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "11",
+            "name": "RV11",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "12",
+            "name": "RV12",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "13",
+            "name": "RV13",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "14",
+            "name": "RV14",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "15",
+            "name": "RV15",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "16",
+            "name": "RV16",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "17",
+            "name": "RV17",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "18",
+            "name": "RV18",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "19",
+            "name": "RV19",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "20",
+            "name": "RV20",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "21",
+            "name": "RV21",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "22",
+            "name": "RV22",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "23",
+            "name": "RV23",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "24",
+            "name": "RV24",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "25",
+            "name": "RV25",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "26",
+            "name": "RV26",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "27",
+            "name": "RV27",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "28",
+            "name": "RV28",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "29",
+            "name": "RV29",
+            "description": null,
+            "__typename": "RVSpot"
+          },
+          {
+            "id": "30",
+            "name": "RV30",
+            "description": null,
+            "__typename": "RVSpot"
+          }
+        ],
+        "__typename": "RVLot"
+      }
+    }
+  ],
+  "venueAgreement": "1",
+  "loading": false
+}

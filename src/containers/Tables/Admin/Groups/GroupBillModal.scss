@@ -1,0 +1,116 @@
+@import '../../../../styles/Colors/colors';
+
+.group-bill-modal-card {
+  width: 453px;
+  height: 330px;
+  margin: calc(50vh - 79px) auto auto;
+
+  .MuiCheckbox-colorPrimary {
+    margin-left: 10px;
+    color: $primary-border;
+  }
+
+  .group-table {
+    height: 195px;
+    margin-top: 20px;
+    overflow-y: auto;
+
+    .group-table-row {
+      display: flex;
+
+      .event-info {
+        p {
+          margin-left: 10px;
+          padding: 0;
+          font-family: IBMPlexSans-Regular;
+          line-height: 123%;
+
+          &:first-child {
+            line-height: 24px;
+            color: $primary-text;
+            font-size: 16px;
+            margin-top: 10px;
+            white-space: nowrap;
+          }
+
+          &:last-child {
+            line-height: 16px;
+            font-size: 12px;
+            color: $secondary-text;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  h4 {
+    margin: 0;
+    padding: 20px 20px 10px 20px;
+    white-space: nowrap;
+    font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.968px;
+    text-transform: uppercase;
+    color: $secondary-button;
+  }
+
+  p {
+    margin: 0;
+    padding: 10px 20px 14px 20px;
+    font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: $primary-text;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding: 0 20px 20px 20px;
+
+    span {
+      display: block;
+
+      $button-width: 115px;
+      button {
+        margin-bottom: 5px;
+        width: $button-width;
+        color: $white;
+
+        &:first-child {
+          background-color: $secondary-button;
+        }
+
+        &:nth-child(2) {
+          &:disabled {
+            background-color: $primary-border;
+            color: $side-nav-color;
+          }
+          background-color: $primary-button;
+          margin-left: 20px !important;
+        }
+
+        .MuiButton-label {
+          font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0.704px;
+          text-transform: uppercase;
+        }
+
+        .MuiTouchRipple-root {
+          width: $button-width;
+        }
+      }
+    }
+  }
+}

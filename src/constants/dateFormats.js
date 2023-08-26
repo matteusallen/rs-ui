@@ -1,0 +1,1 @@
+export const MONTH_DAY_YEAR_FORMAT = 'MM/DD/YYYY';

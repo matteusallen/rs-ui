@@ -1,0 +1,195 @@
+@import '../../styles//Colors/colors';
+
+.print-receipt {
+  color: $primary-text;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+
+  .top-bar {
+    height: 15px;
+    margin: -10px -10px 0;
+    background-color: $primary-button;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 16px;
+    margin-top: 21px;
+  }
+
+  .receipt-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $primary-border;
+
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 10px;
+
+      img {
+        margin: 23px 0 0;
+      }
+
+      .event-name {
+        margin-top: 23px;
+        .title {
+          margin-top: 15px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: right;
+      padding-bottom: 10px;
+      p {
+        font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        line-height: 11px;
+      }
+    }
+  }
+
+  .order-items-container {
+    border-top: 1px solid rgba(200, 214, 229, 0.5);
+  }
+
+  .order-items {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $primary-border;
+
+    .reservation {
+      min-width: 350px;
+      .title {
+        &:first-child {
+          margin-top: 30px;
+        }
+      }
+      p {
+        font-size: 11px;
+        margin-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 30px;
+      }
+    }
+
+    .check-in {
+      display: flex;
+
+      img {
+        margin: 0 19px;
+      }
+      p {
+        margin: 0;
+        font-size: 11px;
+      }
+    }
+
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: right;
+      padding-bottom: 30px;
+
+      &:last-child {
+        justify-content: flex-end;
+      }
+
+      &.left-align {
+        text-align: left;
+      }
+
+      .title {
+        margin-top: 30px;
+      }
+      p {
+        margin: 2px;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .order-history {
+    .title {
+      margin: 7px 5px;
+    }
+    .history-details-wrapper {
+      display: flex;
+      width: 100%;
+      flex-direction: space-between;
+      padding: 10px;
+      min-height: 31px;
+      align-items: center;
+      background: $white;
+      border-bottom: 1px solid rgba(200, 214, 229, 0.25);
+    }
+    .history-details-charge-container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      letter-spacing: 0.48px;
+      height: auto;
+      background: $primary-background;
+      text-transform: uppercase;
+    }
+    .history-details-charge-attribute {
+      text-transform: lowercase;
+    }
+    .history-details-charge-amount {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: 700;
+      font-size: 11px;
+      height: auto;
+      align-items: left;
+
+      .history-details-payment-details-block {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    .history-details-notes-container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      letter-spacing: 0.48px;
+      align-items: center;
+    }
+    .details-column {
+      width: 34%;
+      &:first-child {
+        width: 40%;
+      }
+      &:nth-child(2) {
+        width: 40%;
+      }
+      &:nth-child(3) {
+        width: 20%;
+        text-align: right;
+      }
+    }
+    .fees-row {
+      border-bottom: none;
+    }
+  }
+  .fee-statement {
+    position: fixed;
+    bottom: 16px;
+    font-size: 11px;
+    padding-left: 10px;
+    z-index: -1;
+  }
+}

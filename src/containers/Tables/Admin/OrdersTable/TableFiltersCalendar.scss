@@ -1,0 +1,28 @@
+@import '../../../../styles/Colors/colors';
+.CalendarDay__today {
+  background: $white;
+  border: 2px solid $primary-button;
+}
+
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  color: $white;
+  background-color: $primary-button;
+  border: 0.5px solid $primary-button;
+  text-decoration: none;
+}
+
+.CalendarDay__selected_span,
+.CalendarDay__hovered_span,
+.CalendarDay__selected_span:active,
+.CalendarDay__selected_span:hover,
+.CalendarDay__hovered_span:hover {
+  color: $white;
+  background-color: $secondary-cal-dropdown;
+  border: 0.5px solid $secondary-cal-dropdown;
+}
+
+.DayPickerKeyboardShortcuts_buttonReset {
+  display: none;
+}

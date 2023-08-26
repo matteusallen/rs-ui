@@ -1,0 +1,7 @@
+@import 'partials/_base', 'partials/_fonts', 'partials/_spinner', 'partials/_test';
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

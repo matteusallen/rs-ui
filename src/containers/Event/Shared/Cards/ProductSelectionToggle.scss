@@ -1,0 +1,40 @@
+@import '../../../../styles/Colors/colors';
+
+.product-select-toggle {
+  .main {
+    border-bottom: 1px solid $primary-border;
+    justify-content: space-between;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    p {
+      size: 15px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  .questions-toggle-container {
+    .question-bloc {
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+      p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.7px;
+        margin: 0 10px;
+      }
+      .MuiButtonBase-root {
+        padding: 0;
+      }
+      .MuiCheckbox-colorSecondary.Mui-checked {
+        color: $checkmark;
+      }
+    }
+    .MuiCheckbox-colorSecondary.Mui-checked {
+      color: $link-text;
+    }
+  }
+}

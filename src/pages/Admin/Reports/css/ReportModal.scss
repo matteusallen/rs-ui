@@ -1,0 +1,273 @@
+@import '../../../../styles/Colors/colors';
+
+.report-modal {
+  padding: 20px;
+  width: 540px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  overflow: inherit !important;
+
+  .confirmation-banner {
+    background-color: $link-text;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: 'IBMPlexSans-Regular';
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 10px;
+    text-align: left;
+    padding: 15px 0 13px 20px;
+
+    .confirmation-content-container {
+      display: flex;
+    }
+  }
+
+  .error-banner {
+    background-color: $error-red;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: 'IBMPlexSans-Regular';
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 10px;
+    text-align: left;
+    padding: 15px 0 13px 20px;
+  }
+
+  .date-input--wrapper {
+    margin-top: 10px;
+    position: relative;
+    height: 56px;
+    padding: 7px 12px;
+    background: #f1f4f7;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+
+    &:after {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      transform: scaleX(0);
+      transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+      border-bottom: 2px solid $link-text;
+      pointer-events: none;
+    }
+
+    .date-label-wrapper {
+      label {
+        padding-right: 65px;
+        color: $secondary-text;
+      }
+    }
+
+    .DateInput {
+      width: auto;
+
+      &:nth-child(3) input {
+        text-align: right;
+      }
+    }
+
+    .DateInput_input {
+      padding: 0;
+      padding-right: 25px;
+      border: 0;
+      height: auto;
+      color: $primary-text;
+    }
+  }
+
+  .DateRangePicker > div {
+    width: 100%;
+  }
+
+  .DateRangePicker,
+  .DateRangePickerInput {
+    border: 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: flex-end;
+  }
+
+  .DateRangePickerInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    margin: 0;
+    padding-bottom: 10px;
+
+    .MuiSvgIcon-root {
+      margin: 0 6px 0 0;
+      transform: translate(0px, 3px);
+
+      path {
+        fill: $primary-warning;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 10px 0 0;
+    font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: $primary-text;
+  }
+
+  .selected-events-container {
+    max-height: 200px;
+    overflow: auto;
+    position: relative;
+
+    .selected-event {
+      display: flex;
+      margin-top: 25px;
+
+      span {
+        &:first-child {
+          padding-left: 0 !important;
+        }
+      }
+
+      .event-name {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+
+        font-size: 15px;
+        line-height: 24px;
+
+        span {
+          &:first-child {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 425px;
+          }
+          &:last-child {
+            color: #8395a7;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+
+      svg {
+        color: #2e86de;
+      }
+    }
+  }
+
+  .gradient-div {
+    position: relative;
+  }
+
+  .gradient-div:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, white);
+    height: 50px;
+    width: 500px;
+  }
+
+  .recon-select {
+    color: rgb(0, 0, 0);
+    font-size: 0.9375rem;
+    line-height: 24px;
+    height: 55px;
+    margin: 10px 0;
+    background-color: $primary-background;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .MuiSelect-selectMenu {
+      margin-bottom: 0;
+    }
+
+    .MuiInputLabel-formControl {
+      padding-top: 13px;
+      color: $secondary-text;
+      line-height: 24px;
+      font-size: 15px;
+    }
+
+    .MuiFormLabel-filled {
+      top: 2px !important;
+      padding: 0 !important;
+      line-height: 16px !important;
+      font-size: 16px !important;
+      color: $secondary-text;
+    }
+
+    .MuiInputBase-formControl {
+      bottom: -12px;
+    }
+
+    .MuiFilledInput-input {
+      &:first-child {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+
+    span {
+      display: block;
+      $button-width: 115px;
+      button {
+        width: $button-width;
+        color: $white;
+        z-index: 0;
+
+        &:first-child {
+          background-color: $secondary-button;
+        }
+
+        &:nth-child(2) {
+          background-color: $primary-button;
+          margin-left: 20px !important;
+        }
+
+        &:disabled {
+          color: #576574;
+          opacity: 0.54;
+          background-color: $primary-border;
+        }
+
+        .MuiButton-label {
+          font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0.704px;
+          text-transform: uppercase;
+        }
+
+        .MuiTouchRipple-root {
+          width: $button-width;
+        }
+      }
+    }
+  }
+}

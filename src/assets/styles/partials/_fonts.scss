@@ -1,0 +1,29 @@
+/*_fonts.scss*/
+@font-face {
+  font-family: 'gibsonregular';
+  src: url('../../fonts/gibson_regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gibsonlight';
+  src: url('../../fonts/gibson-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans-Regular';
+  src: url('../../fonts/IBMPlexSans-Regular.woff') format('woff'), url('../../fonts/IBMPlexSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans-Bold';
+  src: url('../../fonts/IBMPlexSans-Bold.woff') format('woff'), url('../../fonts/IBMPlexSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans-SemiBold';
+  src: url('../../fonts/IBMPlexSans-SemiBold.woff') format('woff'), url('../../fonts/IBMPlexSans-SemiBold.woff2') format('woff2');
+}

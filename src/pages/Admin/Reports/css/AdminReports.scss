@@ -1,0 +1,52 @@
+@import '../../../../styles/Colors/colors';
+
+.admin-reports {
+  margin-top: 100px;
+
+  .reports-header {
+    text-align: left;
+    padding: 0 50px 24px;
+    border-bottom: 1px solid $primary-border;
+  }
+
+  .reports-list-container {
+    margin: 50px 0 0 50px;
+    text-align: left;
+
+    .financial-reports {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .operations-reports {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .reports {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+
+      img {
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover {
+          border: 1px solid $primary-button;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 10px 0 0;
+      }
+
+      span {
+        font-size: 16px;
+        color: $secondary-text;
+      }
+    }
+  }
+}

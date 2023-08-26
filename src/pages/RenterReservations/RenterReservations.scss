@@ -1,0 +1,124 @@
+@import '../../styles/Colors/colors';
+
+.renter-reservation-loader {
+  margin-top: 100px;
+}
+
+.reservations-card-list-container {
+  margin-top: 50px !important;
+  display: flex !important;
+  flex-direction: column !important;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 0px !important;
+  }
+
+  .rbt-menu {
+    display: none !important;
+  }
+
+  .reservations-header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: $primary-background;
+    top: 64px;
+    padding: 20px 20px 20px;
+    z-index: 2;
+    width: 100%;
+
+    @media screen and (max-width: 600px) {
+      top: 0px;
+    }
+
+    .search-box {
+      svg.search-icon {
+        @media screen and (max-width: 600px) {
+          margin-left: -100px;
+        }
+
+        &.is-focused {
+          margin: 5px 0 0 7px;
+
+          @media screen and (max-width: 600px) {
+            margin-top: 5px;
+            left: auto;
+            position: relative;
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .separation-header {
+    @media screen and (max-width: 768px) {
+      font-size: 22px !important;
+      margin: 10px 0 25px 10px;
+    }
+  }
+
+  .reservations-table-container {
+    margin-top: 20px;
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 0 5px;
+
+    @media screen and (max-width: 600px) {
+      padding-bottom: 75px;
+    }
+  }
+
+  .event-card-container {
+    display: flex;
+    justify-content: space-between;
+
+    .date-range-container {
+      color: #8093a5;
+      text-transform: uppercase;
+      font-family: 'IBMPlexSans-Bold';
+      letter-spacing: 0.62px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+
+    .book-button-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .book-button-link {
+      width: 100%;
+    }
+
+    h4 {
+      margin: 10px 20px 0 0;
+      @media screen and (max-width: 600px) {
+        margin: 10px 0 25px;
+        white-space: break-spaces;
+        line-height: normal !important;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      height: fit-content;
+    }
+  }
+
+  .no-results-container {
+    @media screen and (max-width: 600px) {
+      margin-top: 8px;
+    }
+  }
+
+  .no-reservations {
+    font-size: 16px;
+    text-align: left;
+
+    @media screen and (max-width: 600px) {
+      margin-left: 25px;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "local": {
+    "users": {
+      "admin": {
+        "email": "qa-admin@mail.com",
+        "password": "123"
+      },
+      "venueAdmin": {
+        "email": "qa-admin@mail.com",
+        "password": "123"
+      },
+      "reservationAdmin": {
+        "email": "qa-admin@mail.com",
+        "password": "123"
+      },
+      "renter": {
+        "email": "qa-renter@mail.com",
+        "password": "123"
+      },
+      "ops": {
+        "email": "qa-ops@mail.com",
+        "password": "123"
+      },
+      "bad": {
+        "email": "qa-renter@mail.com",
+        "password": "badpassword"
+      }
+    },
+    "baseURL": "http://localhost:3000"
+  },
+  "development": {
+    "users": {
+      "admin": {
+        "email": "mfettes@rodeologistics.co",
+        "password": "Openstalls01"
+      },
+      "venueAdmin": {
+        "email": "mfettes@rodeologistics.co",
+        "password": "Openstalls01"
+      },
+      "reservationAdmin": {
+        "email": "reservationmikef@mailinator.com",
+        "password": "Openstalls01"
+      },
+      "renter": {
+        "email": "irmagerd@mailinator.com",
+        "password": "Openstalls01"
+      },
+      "ops": {
+        "email": "Mikefops@mailinator.com",
+        "password": "Openstalls01"
+      },
+      "bad": {
+        "email": "qa-renter@mail.com",
+        "password": "badpassword"
+      }
+    },
+    "baseURL": "https://open-stalls-app-dev.herokuapp.com/"
+  },
+  "staging": {
+    "users": {
+      "admin": {
+        "email": "qa-admin@mail.com",
+        "password": "123"
+      },
+      "venueAdmin": {
+        "email": "qa-admin@mail.com",
+        "password": "123"
+      },
+      "reservationAdmin": {
+        "email": "qa-admin@mail.com",
+        "password": "123"
+      },
+      "renter": {
+        "email": "qa-renter@mail.com",
+        "password": "123"
+      },
+      "ops": {
+        "email": "qa-ops@mail.com",
+        "password": "123"
+      },
+      "bad": {
+        "email": "qa-renter@mail.com",
+        "password": "badpassword"
+      }
+    },
+    "baseURL": "https://open-stalls-app-staging.herokuapp.com/"
+  }
+}

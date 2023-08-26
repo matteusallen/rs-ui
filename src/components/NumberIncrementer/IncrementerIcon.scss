@@ -1,0 +1,25 @@
+.quantity-incrementer-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  right: 12px;
+  top: 13px;
+
+  .MuiIconButton-root {
+    padding: 0px;
+    border: 1px solid #c8d6e5;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
+
+    .MuiSvgIcon-root {
+      fill: black;
+      width: 1.25em;
+      height: 0.75em;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.sign-up-page {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+// NOTE: Make sure this media query matches the components Material UI media query
+@media (min-width: 960px) {
+  .sign-up-page {
+    flex-flow: row;
+  }
+}

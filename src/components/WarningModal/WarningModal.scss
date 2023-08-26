@@ -1,0 +1,76 @@
+@import '../../styles/Colors/colors';
+
+.back-date-modal-card {
+  width: 399px;
+  margin: calc(50vh - 79px) auto auto;
+
+  .header-container {
+    margin: 0;
+    display: flex;
+    padding: 20px 20px 10px 20px;
+    text-transform: uppercase;
+
+    h4 {
+      padding-top: 2px;
+    }
+
+    .MuiSvgIcon-root {
+      margin: 0 6px 0 0;
+      transform: translate(0px, 3px);
+
+      path {
+        fill: $primary-warning;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 10px 20px 14px 20px;
+    font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: $primary-text;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 20px 20px;
+
+    span {
+      display: block;
+
+      $button-width: 115px;
+      button {
+        min-width: $button-width;
+        color: white;
+
+        &:first-child {
+          background-color: $secondary-button;
+        }
+
+        &:nth-child(2) {
+          background-color: $primary-button;
+          margin-left: 20px !important;
+        }
+
+        .MuiButton-label {
+          font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0.704px;
+          text-transform: uppercase;
+        }
+
+        .MuiTouchRipple-root {
+          width: $button-width;
+        }
+      }
+    }
+  }
+}

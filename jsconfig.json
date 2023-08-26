@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": ".",
+    "paths": {
+      "Assets/*": ["./src/assets/*"],
+      "Components/*": ["./src/components/*"],
+      "Constants/*": ["./src/constants/*"],
+      "Helpers/*": ["./src/helpers/*"],
+      "Hooks/*": ["./src/hooks/*"],
+      "Lib/*": ["./src/lib/*"],
+      "Mutations/*": ["./src/mutations/*"],
+      "Pages/*": ["./src/pages/*"],
+      "Queries/*": ["./src/queries/*"],
+      "Store/*": ["./src/store/*"],
+      "Types/*": ["./src/types/*"],
+      "Utils/*": ["./src/utils/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}

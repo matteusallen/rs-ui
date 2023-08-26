@@ -1,0 +1,44 @@
+@import '../../../../../src/styles/Colors/colors';
+.basic-info__deferred {
+  margin-top: 20px;
+  width: 535px;
+  .basic-info__deffered--header {
+    display: flex;
+    align-items: center;
+  }
+
+  .deffered-tip {
+    font-size: 8px;
+  }
+
+  .deferred-description {
+    line-height: 25px;
+  }
+
+  .deferred-selection-notice {
+    background: #f7e569;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 11px;
+    display: flex;
+  }
+
+  .deferred-enable {
+    .MuiSwitch-colorPrimary.Mui-checked {
+      color: $white;
+    }
+    .MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+      background-color: $primary-button;
+      opacity: 1;
+    }
+  }
+
+  .deferred__access-label--container {
+    display: flex;
+    align-items: center;
+  }
+
+  .deferred__access-label--label {
+    margin-right: 5px;
+  }
+}

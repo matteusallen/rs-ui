@@ -1,0 +1,62 @@
+@import '../../../../styles/Colors/colors';
+
+.groups-table-container {
+  height: 100%;
+  overflow: auto;
+
+  .groups-table-row {
+    display: flex;
+    flex-direction: column;
+    height: 88px;
+    margin: 10px 50px;
+    text-align: left;
+    padding: 15px 24px;
+    box-sizing: borderbox;
+    background: white;
+    box-shadow: 0 2px 6px rgba(17, 24, 31, 0.03), 0 2px 3px rgba(17, 24, 31, 0.1);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .group-name {
+      font-family: 'IBMPlexSans-SemiBold';
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 0.792px;
+      display: flex;
+      flex-grow: 1;
+      width: 50%;
+    }
+
+    .group-contact {
+      font-size: 16px;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 8px rgba(17, 24, 31, 0.15), 0 2px 3px rgba(17, 24, 31, 0.3);
+
+      .group-name {
+        color: $link-text;
+      }
+    }
+  }
+}
+
+.groups-page-header {
+  margin-top: 100px;
+  margin-bottom: 0;
+
+  .groups-header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+  }
+}
+
+.groups-bottom-border {
+  border-bottom: 1px solid rgb(200, 214, 229);
+  margin-bottom: 20px;
+}

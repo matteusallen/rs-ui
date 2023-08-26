@@ -1,0 +1,134 @@
+@import '../../styles/Colors/colors';
+
+.search-box {
+  display: flex;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+  .rbt-input-main {
+    width: 600px;
+    background-color: $white;
+    border: 1px solid $primary-border;
+    border-radius: 113px;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 36px;
+    align-items: center;
+    align-self: center;
+    outline: none;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .rbt-input-hint {
+    padding-top: 0 !important;
+  }
+
+  .search-orders-field {
+    width: 600px;
+    background-color: $white;
+    border: 1px solid $primary-border;
+    border-radius: 113px;
+    height: 36px;
+    align-items: center;
+    align-self: center;
+
+    &.trim {
+      .rbt-input-hint {
+        display: none;
+      }
+    }
+
+    input {
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+      &:focus {
+        border-color: $link-text;
+      }
+    }
+
+    input::placeholder {
+      text-align: center;
+
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+        padding-left: 30px;
+      }
+    }
+
+    input:focus::placeholder {
+      color: transparent !important;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    .rbt-aux {
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 0;
+    }
+  }
+  .clear-button {
+    height: 35px;
+    min-width: auto;
+    .MuiButton-label {
+      height: 100%;
+    }
+  }
+
+  .clear-text {
+    color: $primary-border;
+  }
+
+  .MuiButtonBase-root {
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  svg.search-icon {
+    margin-top: 20px;
+    color: $text-accent;
+
+    @media screen and (min-width: 960px) {
+      margin: 5px 0 0 185px;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-top: 5px;
+      left: 50%;
+      position: relative;
+      margin-left: -105px !important;
+    }
+
+    &.events {
+      @media screen and (min-width: 960px) {
+        margin: 5px 0 0 210px;
+      }
+
+      @media screen and (max-width: 600px) {
+        margin-left: -80px !important;
+      }
+    }
+
+    &.is-focused {
+      margin: 5px 0 0 7px;
+
+      @media screen and (max-width: 600px) {
+        margin-top: 5px;
+        left: auto;
+        position: relative;
+        margin-left: 7px;
+      }
+    }
+  }
+}

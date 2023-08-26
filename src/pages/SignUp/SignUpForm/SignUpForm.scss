@@ -1,0 +1,144 @@
+@import '../../../styles/Colors/colors';
+@import '../../../styles/Typography/typography';
+
+.sign-up-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: $white;
+  flex-grow: 1;
+
+  .sign-up-form-wrapper {
+    display: flex;
+    padding: 27.5px;
+    width: 100%;
+    flex-grow: 1;
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      .form-inputs,
+      .form-footer {
+        width: 100%;
+      }
+    }
+
+    .terms-and-conditions-error,
+    .sign-up-error {
+      @include p-text;
+      color: $white;
+      background-color: $error-red;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    h2 {
+      @include heading2;
+      text-align: left;
+    }
+
+    .back-button-wrapper {
+      display: flex;
+      align-content: flex-start;
+    }
+
+    .sign-up-input-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+
+      label {
+        text-transform: uppercase;
+      }
+
+      .MuiFormControl-root,
+      .MuiTextField-root {
+        width: 100%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+
+        .MuiFilledInput-adornedEnd {
+          background-color: $primary-background;
+        }
+
+        input {
+          background-color: $primary-background;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px $primary-background inset;
+          }
+        }
+      }
+    }
+
+    .step-description {
+      @include p-text;
+      text-align: left;
+    }
+
+    .terms-text {
+      display: flex;
+      @include p-text;
+      text-align: left;
+    }
+
+    button {
+      @include button-text;
+
+      &[type='submit'],
+      &.next {
+        width: 100%;
+        background-color: $primary-button;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      }
+      &.back {
+        background-color: $white;
+        color: $link-text;
+
+        svg {
+          transform: scale(0.5);
+        }
+      }
+    }
+
+    .sign-in-text {
+      @include p-text;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// NOTE: Make sure this media query matches the components Material UI media query
+@media (min-width: 960px) {
+  .sign-up-form {
+    align-items: center;
+    width: 50%;
+    flex-grow: 0;
+  }
+
+  .sign-up-form-wrapper {
+    block-size: fit-content;
+    padding: 50px;
+
+    .sign-up-input-row {
+      .MuiFormControl-root,
+      .MuiTextField-root {
+        &.first-name,
+        &.last-name {
+          width: calc(50% - 10px);
+        }
+      }
+    }
+  }
+  .terms-text > span:nth-child(2) {
+    padding-top: 8px;
+  }
+}

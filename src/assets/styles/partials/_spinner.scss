@@ -1,0 +1,31 @@
+$diameter: 64px;
+
+.spinner-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 998;
+
+  &.show {
+    display: block;
+  }
+
+  .spinner {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    width: $diameter;
+    height: $diameter;
+    margin: -$diameter / 2;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

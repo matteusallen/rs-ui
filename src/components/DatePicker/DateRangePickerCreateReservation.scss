@@ -1,0 +1,39 @@
+@import '../../styles/Colors/colors';
+.os-calendar-wrapper {
+  .CalendarDay__default {
+    color: $primary-text;
+    border: 0.5px solid $primary-background;
+    font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .CalendarDay__today {
+    background: $white;
+    border: 2px solid $primary-button;
+  }
+
+  .CalendarDay__blocked_out_of_range {
+    color: $secondary-cal-disabled;
+    text-decoration: line-through;
+  }
+
+  .CalendarDay__selected {
+    color: $white;
+    background-color: $primary-button;
+    border: 0.5px solid $primary-button;
+    text-decoration: none;
+  }
+
+  .CalendarDay__selected_span,
+  .CalendarDay__hovered_span,
+  .CalendarDay__hovered_span:hover {
+    color: $white;
+    background-color: $secondary-cal-dropdown;
+    border: 0.5px solid $secondary-cal-dropdown;
+  }
+}

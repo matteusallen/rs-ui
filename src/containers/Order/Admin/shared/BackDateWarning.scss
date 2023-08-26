@@ -1,0 +1,21 @@
+@import '../../../../styles/Colors/colors';
+
+.back-date-warning {
+  font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: left;
+  letter-spacing: 0.484px;
+  color: $primary-text;
+
+  .MuiSvgIcon-root {
+    margin: 0 6px 0 0;
+    transform: translate(0px, 8px);
+
+    path {
+      fill: $primary-warning;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import '../../styles/Colors/colors';
+.os-calendar-wrapper {
+  z-index: 2; // Note: Some items on admin reservation create have a z-index of 1
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .date-label-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: $secondary-text;
+    font-size: 12px;
+
+    .date-label-end {
+      margin-right: 5px;
+    }
+  }
+
+  .DateRangePickerInput {
+    background-color: $primary-background;
+    user-select: none;
+
+    .DateInput {
+      background-color: $primary-background;
+      user-select: none;
+
+      &:last-child input {
+        text-align: right;
+      }
+    }
+
+    .DateInput_fang {
+      top: 40px !important;
+    }
+
+    input,
+    input::-webkit-input-placeholder {
+      background-color: $primary-background;
+      font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      max-width: 105px;
+      color: rgb(17, 24, 31);
+      user-select: none;
+    }
+    input::-webkit-input-placeholder {
+      color: $secondary-text;
+    }
+  }
+
+  .DateRangePickerInput_arrow_svg,
+  .DateRangePickerInput_arrow {
+    fill: $side-nav-color;
+    color: $side-nav-color;
+  }
+
+  .DateRangePickerInput__withBorder {
+    border-radius: 2px;
+    border: 1px solid $primary-border;
+  }
+
+  input.DateInput_input__focused,
+  .DateInput_input__focused {
+    border-bottom: 2px solid $primary-button !important;
+  }
+
+  .DayPickerNavigation_button__default {
+    color: $secondary-text;
+    border: 1px solid $primary-background;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  .CalendarMonth_caption {
+    font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .DayPicker_weekHeader_li {
+    color: $primary-text;
+    font-family: IBMPlexSans-Regular, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .DayPickerKeyboardShortcuts_buttonReset {
+    display: none;
+  }
+}

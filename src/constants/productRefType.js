@@ -1,0 +1,6 @@
+export default {
+  STALL_PRODUCT: 1,
+  ADD_ON_PRODUCT: 2,
+  RV_PRODUCT: 3,
+  RESERVATION: 4
+};

@@ -1,0 +1,26 @@
+.booking-col {
+  padding-left: 50px;
+}
+
+.date-picker-container > div {
+  display: flex !important;
+
+  .DateRangePicker,
+  .DateRangePickerInput {
+    width: 100%;
+  }
+}
+
+.booking-time {
+  display: flex;
+  margin-top: 20px;
+
+  .open-time-field {
+    margin-right: 10px;
+    margin-bottom: 0 !important;
+  }
+  .close-time-field {
+    margin-left: 10px;
+    margin-bottom: 0 !important;
+  }
+}

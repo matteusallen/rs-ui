@@ -1,0 +1,24 @@
+@import 'src/styles/Colors/colors';
+
+html,
+body,
+#root,
+.App,
+section {
+  height: 100%;
+  margin: 0;
+}
+
+.admin-root-section {
+  height: calc(100% - 220px);
+}
+
+body {
+  color: $primary-text !important;
+  background-color: #f2f4f7 !important;
+}
+
+a {
+  color: #2875c3;
+  text-decoration: none;
+}
